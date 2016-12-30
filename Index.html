@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.js"></script>
+    <script src="index.js"></script>
+    <title>Plot assay</title>
+</head>
+<body>
+    <style type="text/css">
+        label {
+            width: 100px;
+            display: inline-block;
+            height: 30px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .graph {
+            margin-top: 30px;
+            border: 1px solid black;
+            width: 360px;
+            height: 300px;
+        }
+        input {
+            width: 260px;
+        }
+    </style>
+    <div class="container" align="center">
+        <form>
+            <label>FROM: </label><input class="from"><br>
+            <label>TO: </label><input class="to"><br>
+            <label>FUNCTION: </label><input class="fun"><br>
+        </form>
+        <button class="plot" type="button" style="margin-left: 314px">PLOT</button><br>
+        <div class="graph"></div>
+    </div>
+</body>
+</html>
